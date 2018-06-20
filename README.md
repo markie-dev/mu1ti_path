@@ -4,7 +4,7 @@ https://markieeee.github.io
 
 ---
 
-~incomplete jailbreak~
+~incomplete jailbreak
 
 ### Capabilities Right Now:
 - tfp0
