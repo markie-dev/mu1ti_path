@@ -1,8 +1,7 @@
 # mu1ti_Path Jailbreak Toolkit
 for iOS 11.0-11.3.1
 
-https://markieeee.xyz/mu1ti_path.html
-
+https://markieeee.xyz/mu1ti_path
 ---
 
 ~incomplete jailbreak
