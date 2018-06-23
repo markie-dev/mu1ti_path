@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,13 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7X9-ve-zMp">
-                                <rect key="frame" x="0.0" y="472" width="375" height="195"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7X9-ve-zMp">
+                                <rect key="frame" x="0.0" y="472" width="379" height="195"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="ui and compiling done by @markieeee" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11P-yt-iUz">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ui and compiling done by @markieeee" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11P-yt-iUz">
                                         <rect key="frame" x="16" y="67" width="343" height="79"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -33,22 +31,23 @@
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIN-bZ-bcX">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIN-bZ-bcX">
                                         <rect key="frame" x="16" y="-9" width="343" height="79"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                         </accessibility>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="79" id="oe5-Nq-cL4"/>
+                                        </constraints>
                                         <string key="text">
-Exploits and Patches From:                     Electra, QiLin ,and JackeaJames </string>
+Exploits and Patches From: Electra, QiLin ,and JackeaJames </string>
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="achieves SSH, tfp0, patched amfid, and binpack commands all from the multi_path exploit                            " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrG-Zj-30H">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="achieves SSH, tfp0, patched amfid, and binpack commands all from the multi_path exploit                            " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qrG-Zj-30H">
                                         <rect key="frame" x="16" y="110" width="343" height="101"/>
-                                        <autoresizingMask key="autoresizingMask"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
@@ -57,9 +56,8 @@ Exploits and Patches From:                     Electra, QiLin ,and JackeaJames <
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" alpha="0.81000000238418579" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaZ-GJ-PnB">
+                                    <button opaque="NO" alpha="0.81000000238418579" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaZ-GJ-PnB">
                                         <rect key="frame" x="348" y="165" width="22" height="22"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -68,18 +66,34 @@ Exploits and Patches From:                     Electra, QiLin ,and JackeaJames <
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PIN-bZ-bcX" firstAttribute="leading" secondItem="11P-yt-iUz" secondAttribute="leading" id="0Bz-aI-5pP"/>
+                                    <constraint firstItem="PIN-bZ-bcX" firstAttribute="top" secondItem="7X9-ve-zMp" secondAttribute="top" constant="-9" id="6bx-pA-jrH"/>
+                                    <constraint firstItem="11P-yt-iUz" firstAttribute="leading" secondItem="qrG-Zj-30H" secondAttribute="leading" id="7gy-a8-aXM"/>
+                                    <constraint firstItem="PIN-bZ-bcX" firstAttribute="leading" secondItem="7X9-ve-zMp" secondAttribute="leading" constant="16" id="9KS-0t-SDN"/>
+                                    <constraint firstItem="eaZ-GJ-PnB" firstAttribute="bottom" secondItem="7X9-ve-zMp" secondAttribute="bottomMargin" id="AvM-i7-efv"/>
+                                    <constraint firstItem="PIN-bZ-bcX" firstAttribute="trailing" secondItem="11P-yt-iUz" secondAttribute="trailing" id="cKG-Sz-6Rb"/>
+                                    <constraint firstAttribute="trailing" secondItem="eaZ-GJ-PnB" secondAttribute="trailing" constant="9" id="cnO-HA-q6M"/>
+                                    <constraint firstAttribute="bottom" secondItem="qrG-Zj-30H" secondAttribute="bottom" constant="-16" id="fEP-DR-CpG"/>
+                                    <constraint firstItem="eaZ-GJ-PnB" firstAttribute="top" secondItem="11P-yt-iUz" secondAttribute="bottom" constant="19" id="fih-ks-8FW"/>
+                                    <constraint firstItem="11P-yt-iUz" firstAttribute="top" secondItem="7X9-ve-zMp" secondAttribute="top" constant="67" id="geZ-tA-fCs"/>
+                                    <constraint firstAttribute="trailing" secondItem="PIN-bZ-bcX" secondAttribute="trailing" constant="20" id="guJ-87-cTs"/>
+                                    <constraint firstItem="qrG-Zj-30H" firstAttribute="top" secondItem="PIN-bZ-bcX" secondAttribute="bottom" constant="40" id="yiQ-eQ-FZL"/>
+                                    <constraint firstItem="11P-yt-iUz" firstAttribute="trailing" secondItem="qrG-Zj-30H" secondAttribute="trailing" id="zED-Wd-IaN"/>
+                                </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Logs :)" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwp-Ul-1qe">
-                                <rect key="frame" x="54" y="273" width="266" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Logs :)" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwp-Ul-1qe">
+                                <rect key="frame" x="54" y="273" width="267" height="46"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="60S-PJ-Y3h"/>
+                                </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-nZ-eFc">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vph-nZ-eFc">
                                 <rect key="frame" x="38" y="-51" width="299" height="276"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
@@ -93,30 +107,35 @@ Exploits and Patches From:                     Electra, QiLin ,and JackeaJames <
                                     <action selector="go:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Xb-eO-ucz"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blank 2" highlightedImage="blank" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-Xn-JQq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank 2" highlightedImage="blank" translatesAutoresizingMaskIntoConstraints="NO" id="tg9-Xn-JQq">
                                 <rect key="frame" x="38" y="56" width="299" height="257"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text=" iOS 11-11.3.1" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPw-sP-SID">
-                                <rect key="frame" x="77" y="233" width="221" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text=" iOS 11-11.3.1" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPw-sP-SID">
+                                <rect key="frame" x="77" y="233" width="222" height="74"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="oAI-fW-rAU"/>
+                                </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="24"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r1n-NB-Mcq">
-                                <rect key="frame" x="0.0" y="321" width="375" height="151"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r1n-NB-Mcq">
+                                <rect key="frame" x="0.0" y="321" width="376" height="151"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="T4F-l7-LvA"/>
+                                </constraints>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTl-eh-J86">
-                                <rect key="frame" x="54" y="146" width="266" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YTl-eh-J86">
+                                <rect key="frame" x="54" y="146" width="267" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="kai-DK-TXj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Jailbreak">
@@ -128,6 +147,32 @@ Exploits and Patches From:                     Electra, QiLin ,and JackeaJames <
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.23529411764705882" green="0.87450980392156863" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7X9-ve-zMp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="25v-pJ-wnt"/>
+                            <constraint firstItem="xPw-sP-SID" firstAttribute="centerX" secondItem="gwp-Ul-1qe" secondAttribute="centerX" id="2jE-Co-glv"/>
+                            <constraint firstItem="Vph-nZ-eFc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="38" id="38R-I8-2ND"/>
+                            <constraint firstItem="YTl-eh-J86" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="3ut-SR-art"/>
+                            <constraint firstItem="tg9-Xn-JQq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="36" id="57E-nU-2dn"/>
+                            <constraint firstItem="xPw-sP-SID" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="Bc2-ge-i9e"/>
+                            <constraint firstItem="YTl-eh-J86" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="126" id="FAz-nm-hyp"/>
+                            <constraint firstItem="r1n-NB-Mcq" firstAttribute="leading" secondItem="7X9-ve-zMp" secondAttribute="leading" id="G6I-FQ-2u2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7X9-ve-zMp" secondAttribute="trailing" constant="-20" id="M7q-Oy-kCH"/>
+                            <constraint firstItem="Vph-nZ-eFc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-71" id="MaR-c1-GqA"/>
+                            <constraint firstItem="xPw-sP-SID" firstAttribute="top" secondItem="Vph-nZ-eFc" secondAttribute="bottom" constant="8" symbolic="YES" id="N95-eh-1be"/>
+                            <constraint firstItem="gwp-Ul-1qe" firstAttribute="top" secondItem="YTl-eh-J86" secondAttribute="bottom" constant="36" id="PHB-Gw-uke"/>
+                            <constraint firstItem="7X9-ve-zMp" firstAttribute="top" secondItem="r1n-NB-Mcq" secondAttribute="bottom" id="TYI-Bv-1Gp"/>
+                            <constraint firstItem="gwp-Ul-1qe" firstAttribute="centerX" secondItem="r1n-NB-Mcq" secondAttribute="centerX" id="Txr-yA-cfw"/>
+                            <constraint firstItem="tg9-Xn-JQq" firstAttribute="centerX" secondItem="YTl-eh-J86" secondAttribute="centerX" id="Yol-4w-l92"/>
+                            <constraint firstItem="r1n-NB-Mcq" firstAttribute="top" secondItem="xPw-sP-SID" secondAttribute="bottom" constant="14" id="coI-ja-NgM"/>
+                            <constraint firstItem="Vph-nZ-eFc" firstAttribute="leading" secondItem="tg9-Xn-JQq" secondAttribute="leading" id="epj-o0-5FV"/>
+                            <constraint firstItem="tg9-Xn-JQq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fjD-G9-oK5"/>
+                            <constraint firstItem="r1n-NB-Mcq" firstAttribute="top" secondItem="tg9-Xn-JQq" secondAttribute="bottom" constant="8" symbolic="YES" id="guY-1j-mTb"/>
+                            <constraint firstItem="YTl-eh-J86" firstAttribute="leading" secondItem="gwp-Ul-1qe" secondAttribute="leading" id="qzZ-gw-LSr"/>
+                            <constraint firstItem="YTl-eh-J86" firstAttribute="trailing" secondItem="gwp-Ul-1qe" secondAttribute="trailing" id="rK4-ed-xET"/>
+                            <constraint firstItem="r1n-NB-Mcq" firstAttribute="top" secondItem="gwp-Ul-1qe" secondAttribute="bottom" constant="2" id="rrR-yh-rrB"/>
+                            <constraint firstItem="r1n-NB-Mcq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wdO-cI-P9w"/>
+                            <constraint firstItem="Vph-nZ-eFc" firstAttribute="trailing" secondItem="tg9-Xn-JQq" secondAttribute="trailing" id="zX9-M6-IUo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
@@ -136,7 +181,7 @@ Exploits and Patches From:                     Electra, QiLin ,and JackeaJames <
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112.8" y="115.59220389805098"/>
+            <point key="canvasLocation" x="111.2" y="113.79310344827587"/>
         </scene>
     </scenes>
     <resources>
