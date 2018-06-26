@@ -211,9 +211,8 @@ void createDirAtPath(const char* path) {
 }
 
 void mountDevAtPathAsRW(const char* devpath, const char* path) {
-    
     int rv = spawnAndShaiHulud("/sbin/mount_apfs", devpath, path, NULL, NULL, NULL); //QiLin
-    +    printf("[*] Mounting %s at %s, pspawn returned %d\n", devpath, path, rv); //return value is from posix_spawn instead of mount_apfs but it does work, at least it did for me
+    printf("[*] Mounting %s at %s, pspawn returned %d\n", devpath, path, rv); //return value is from posix_spawn instead of mount_apfs but it does work, at least it did for me
 }
 
 //running this as is will probably make the screen black and reboot a few seconds later, at least that happened to me on 11.1.2

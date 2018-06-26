@@ -90,7 +90,6 @@ uint64_t find_kernel_base() {
 
 @implementation ViewController
 
-
 //https://stackoverflow.com/questions/6807788/how-to-get-ip-address-of-iphone-programmatically
 - (NSString *)getIPAddress {
     
@@ -152,7 +151,6 @@ uint64_t find_kernel_base() {
         [self log:@"Failed to get root!"];
         return;
     }
-    
 
     //-------------amfid-------------//
     
@@ -226,7 +224,8 @@ uint64_t find_kernel_base() {
         NSString *dropbear = [NSString stringWithFormat:@"%@/iosbinpack64/usr/local/bin/dropbear", [[NSBundle mainBundle] bundlePath]];
         NSString *bash = [NSString stringWithFormat:@"%@/iosbinpack64/bin/bash", [[NSBundle mainBundle] bundlePath]];
         NSString *profile = [NSString stringWithFormat:@"%@/iosbinpack64/etc/profile", [[NSBundle mainBundle] bundlePath]];
-        NSString *motd = [NSString stringWithFormat:@"%@/iosbinpack64/etc/motd", [[NSBundle mainBundle] bundlePath]];        NSString *profiledata = [NSString stringWithContentsOfFile:profile encoding:NSASCIIStringEncoding error:nil];
+        NSString *motd = [NSString stringWithFormat:@"%@/iosbinpack64/etc/motd", [[NSBundle mainBundle] bundlePath]];
+        NSString *profiledata = [NSString stringWithContentsOfFile:profile encoding:NSASCIIStringEncoding error:nil];
         [[profiledata stringByReplacingOccurrencesOfString:@"REPLACE_ME" withString:iosbinpack] writeToFile:profile atomically:YES encoding:NSASCIIStringEncoding error:nil];
         
         
@@ -234,12 +233,11 @@ uint64_t find_kernel_base() {
         unlink("/var/profile");
         unlink("/var/motd");
         cp([profile UTF8String], "/var/profile");
-        cp([profile UTF8String], "/var/motd");
+        cp([motd UTF8String], "/var/motd");
         chmod("/var/profile", 0777);
-        chmod("/var/motd", 0777);
+        chmod("/var/motd", 0777); //this can be read-only but just in case
         
-        
-        dbret = launchAsPlatform((char*)[dropbear UTF8String], "-R", "--shell", (char*)[bash UTF8String], "-E", "-p", "22", NULL); //since I can't get environment to work properly you have to run /var/profile manually to setup the environment variables
+        dbret = launchAsPlatform((char*)[dropbear UTF8String], "-R", "--shell", (char*)[bash UTF8String], "-E", "-p", "22", NULL); 
         
         //-------------launch daeamons-------------//
         //--you can drop any daemon plist in iosbinpack64/LaunchDaemons and it will be loaded automatically. "REPLACE_BIN" will automatically get replaced by the absolute path of iosbinpack64--//
@@ -334,6 +332,4 @@ uint64_t find_kernel_base() {
 }
 
 
-    @end
-   
-    
+@end
