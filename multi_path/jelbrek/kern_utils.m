@@ -405,8 +405,12 @@ uint64_t getVnodeAtPath(const char *path) {
      */
     
     //iPad Air 2 iOS 11.1.2
-    uint64_t ksym_vnode_lookup = 0xfffffff0071d6c84;
-    uint64_t ksym_vfs_context_current = 0xfffffff0071f500c;
+    //uint64_t ksym_vnode_lookup = 0xfffffff0071d6c84;
+    //uint64_t ksym_vfs_context_current = 0xfffffff0071f500c;
+
+    //iPad Air 2 iOS 11.3.1
+    uint64_t ksym_vnode_lookup = 0xfffffff0071dffac;
+    uint64_t ksym_vfs_context_current = 0xfffffff0071fe32c;
     
     uint64_t context = zm_fix_addr(kexecute(ksym_vfs_context_current + kslide, 1, 0, 0, 0, 0, 0, 0)); //grab the vfs_context; thanks iBSparkes aka PsychoTea
     uint64_t vnode = kalloc(sizeof(unsigned int *)); //allocate memory on the kernel and grab the address
