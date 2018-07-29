@@ -1,22 +1,30 @@
 # mu1ti_Path Jailbreak Toolkit
 for iOS 11.0-11.3.1
 
+[THIS IS BASICALLY JUST A NEW UI FOR ELECTRA. IF YOU WANT TO TRY IR BEFORE IT TURNED INTO ELECTRA DOWNLOAD BETA 3 AND BELOW.](https://github.com/coolstar/electra1131)
+
 https://markieeee.xyz/mu1ti_path
 ---
 
-~incomplete jailbreak
+<s>~incomplete jailbreak
 
 ### Capabilities Right Now:
-- tfp0
-- r/w on 11-11.26
-- amfi bypass
-- ssh (dropbear)
-- custom launchdaemons
-- full iosbinpack64
+<s> - tfp0
+
+<s>- r/w on 11-11.26
+
+<s>- amfi bypass
+
+<s>- ssh (dropbear)
+
+<s>- custom launchdaemons
+
+<s>- full iosbinpack64
 
 ### Planned:
-- mount / as rw
-- traditional jailbreak (cydia, dpkg, etc.)
+<s> - mount / as rw
+
+<s> - traditional jailbreak (cydia, dpkg, etc.)
 
 ## Credits
 - @jakeashacks - multipath original jailbreak
